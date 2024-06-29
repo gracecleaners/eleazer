@@ -1,9 +1,10 @@
-/*!
- * Bootstrap v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+@font-face {
+    font-family: 'Maiandra';
+    src: url('../fonts/MAIAN.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 :root {
     --blue: #007bff;
@@ -44,7 +45,7 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Maiandra';
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -72,7 +73,7 @@ section {
 
 body {
     margin: 0;
-    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Maiandra';
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -91,6 +92,9 @@ hr {
     height: 0;
     overflow: visible;
 }
+#oo{
+    font-family: 'Maiandra';
+}
 
 h1,
 h2,
@@ -100,11 +104,13 @@ h5,
 h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
+    font-family: 'Maiandra';
 }
 
 p {
     margin-top: 0;
     margin-bottom: 1rem;
+    font-family: 'Maiandra';
 }
 
 abbr[title],
@@ -114,12 +120,14 @@ abbr[data-original-title] {
     text-decoration: underline dotted;
     cursor: help;
     border-bottom: 0;
+    font-family: 'Maiandra'
 }
 
 address {
     margin-bottom: 1rem;
     font-style: normal;
     line-height: inherit;
+    font-family: 'Maiandra'
 }
 
 ol,
@@ -127,6 +135,7 @@ ul,
 dl {
     margin-top: 0;
     margin-bottom: 1rem;
+    font-family: 'Maiandra'
 }
 
 ol ol,
@@ -134,32 +143,39 @@ ul ul,
 ol ul,
 ul ol {
     margin-bottom: 0;
+    font-family: 'Maiandra'
 }
 
 dt {
     font-weight: 700;
+    font-family: 'Maiandra'
 }
 
 dd {
     margin-bottom: .5rem;
     margin-left: 0;
+    font-family: 'Maiandra'
 }
 
 blockquote {
     margin: 0 0 1rem;
+    font-family: 'Maiandra'
 }
 
 dfn {
     font-style: italic;
+    font-family: 'Maiandra'
 }
 
 b,
 strong {
     font-weight: bolder;
+    font-family: 'Maiandra'
 }
 
 small {
     font-size: 80%;
+    font-family: 'Maiandra'
 }
 
 sub,
@@ -168,14 +184,17 @@ sup {
     font-size: 75%;
     line-height: 0;
     vertical-align: baseline;
+    font-family: 'Maiandra'
 }
 
 sub {
     bottom: -.25em;
+    font-family: 'Maiandra'
 }
 
 sup {
     top: -.5em;
+    font-family: 'Maiandra'
 }
 
 a {
@@ -183,6 +202,7 @@ a {
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
+    font-family: 'Maiandra'
 }
 
 a:hover {
@@ -209,7 +229,7 @@ pre,
 code,
 kbd,
 samp {
-    font-family: monospace, monospace;
+    font-family: 'Maiandra';
     font-size: 1em;
 }
 
@@ -218,10 +238,12 @@ pre {
     margin-bottom: 1rem;
     overflow: auto;
     -ms-overflow-style: scrollbar;
+    font-family: 'Maiandra'
 }
 
 figure {
     margin: 0 0 1rem;
+    font-family: 'Maiandra'
 }
 
 img {
@@ -243,15 +265,18 @@ caption {
     color: #6c757d;
     text-align: left;
     caption-side: bottom;
+    font-family: 'Maiandra'
 }
 
 th {
     text-align: inherit;
+    font-family: 'Maiandra'
 }
 
 label {
     display: inline-block;
     margin-bottom: 0.5rem;
+    font-family: 'Maiandra'
 }
 
 button {
@@ -391,7 +416,7 @@ h6,
 .h5,
 .h6 {
     margin-bottom: 0.5rem;
-    font-family: inherit;
+    font-family: 'Maiandra';
     font-weight: 500;
     line-height: 1.2;
     color: inherit;
@@ -425,6 +450,9 @@ h5,
 h6,
 .h6 {
     font-size: 1rem;
+}
+span{
+    font-family: 'Maiandra';
 }
 
 .lead {
@@ -4394,7 +4422,28 @@ input[type="button"].btn-block {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0.5rem 12rem;
+    padding-left: 10rem;
+}
+@media(max-width: 1500px){
+    .navbar{
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding-left: 0rem;
+    }
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
 }
 @media(max-width: 730px){
     .navbar{
@@ -10037,8 +10086,8 @@ h5,
 
 .hero-wrap {
     width: 100%;
-    height: calc(100vh - 117px);
-    min-height: 700px;
+    height: calc(80vh - 117px);
+    min-height: 400px;
     position: relative;
 }
 
@@ -11190,7 +11239,8 @@ textarea.form-control {
 .ftco-footer {
     font-size: 16px;
     padding: 7em 0;
-    background: #906734;
+    /* background: #906734; */
+    background-color: #458DAC;
 }
 
 .ftco-footer .ftco-footer-logo {
