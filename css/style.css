@@ -4422,7 +4422,7 @@ input[type="button"].btn-block {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding-left: 10rem;
+    padding-left: 5rem;
 }
 @media(max-width: 1500px){
     .navbar{
